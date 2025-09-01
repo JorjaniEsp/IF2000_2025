@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package logic;
 import java.util.Arrays;
 import java.util.Collections;
@@ -47,7 +44,7 @@ public class Ejercicios_Semana2_PracticaEnClase {
         }//endExterno
     }//endMetodo
     
-    public void ejercicios_A(int n){
+    public void ejercicio_A(int n){
         System.out.println("*  *  *  *  *");
         // controla las filas
         //for (int i = 1; i <=n-2; i++) {
@@ -61,7 +58,7 @@ public class Ejercicios_Semana2_PracticaEnClase {
        System.out.println("*  *  *  *  *");
     
     }
-    public void ejercicios_B(int n){
+    public void ejercicio_B(int n){
         
         
         for (int i = n; i >= 1; i--) {
