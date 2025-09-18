@@ -14,12 +14,12 @@ public class SimpeMobile {
 
         // Validar monto positivo
         if (amount <= 0) {
-            throw new IllegalArgumentException("El monto debe ser positivo.");
+            throw new IllegalArgumentException("The amount must be positive.");
         }
 
         // Validar fondos
         if (from.getBalance() < amount) {
-            throw new IllegalStateException("Fondos insuficientes en la cuenta origen.");
+            throw new IllegalStateException("Insufficient funds in the source account.");
         }
 
         // Buscar cuenta destino por teléfono y banco
@@ -34,7 +34,7 @@ public class SimpeMobile {
         }
 
         if (to == null) {
-            throw new IllegalStateException("No existe una cuenta en ese banco con ese numero de telefono.");
+            throw new IllegalStateException("There is no account in that bank associated with that phone number.");
         }
 
         // Ejecutar transferencia
@@ -46,7 +46,7 @@ public class SimpeMobile {
         log.record("SINPE_IN (" + desc + ")", to.getAccountNumber(),
                 to.getClient().getId(), amount, to.getBalance());
 
-        System.out.println("Transferencia SINPE completada: " +
+        System.out.println("Simpe transfer completed: " +
                 amount + " de " + from.getClient().getPhone() + " → " + phoneTo +
                 " (" + desc + ")");
     }
