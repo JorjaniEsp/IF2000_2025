@@ -76,6 +76,7 @@ public class Lab_2 {
         System.out.println("Ingre un numero: ");
         num = sc.nextInt();
         
+        
         if (num > 0){
         num += 5;
         System.out.print("El resultado de la funcion es: " + num);
@@ -188,7 +189,6 @@ public class Lab_2 {
     int contador = 0;
     
     
-    
         while(num > 10){
             System.out.println("Ingrese un numero positivo o ingrese 0 para detener el ciclo" );
             num = sc.nextInt();
@@ -282,26 +282,27 @@ public class Lab_2 {
             resultFact *= i;
         }
         
-        System.out.println("El numero factoriar de " + num + " es de " + resultFact);
+        System.out.println("El resultado es" + resultFact);
     }// end method
     
     public void ejercicio_27(){
         
         int []num = new int[10];
-        int valorMaximo = num[0];
+        
         
         for (int i = 0; i < 10; i++) {
             System.out.print("Ingrese un numero: ");
             num[i] = sc.nextInt(); 
                 
             }
+        int valorMaximo = num[0];
         
         for (int i = 1; i < num.length; i++) {
             if(num[i] > valorMaximo){
             valorMaximo = num[i];
             }
         }
-            System.out.print("El mayor valor de la serie es " + valorMaximo);
+            System.out.println("El mayor valor de la serie es " + valorMaximo);
             }
         
             

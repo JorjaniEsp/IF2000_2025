@@ -13,6 +13,21 @@ public class IF2000_IntroductionProgra {
         
         Scanner sc = new Scanner(System.in);
         
+          Person client1 = new Person("Jorjanie", "Espinoza", "7-0321-0835", "62000129", 19);
+          SavingAccount account1 = new SavingAccount("2025-09-13", 12, 5, "1000456", 25000, client1);
+          
+          account1.deposit(3000);
+          
+          System.out.println(account1.toString());
+          
+          System.out.println("\n\n\n-----------------------");
+          System.out.println("   Withdraw of money");
+          System.out.println("-----------------------\n\n");
+          
+          account1.withdraw(15000);
+          
+          System.out.println(account1);
+        
        /* String name = "Liones";
         int age = 40;
         
@@ -62,7 +77,7 @@ public class IF2000_IntroductionProgra {
     //pru.ejercicio_24();
     //pru.ejercicio_25();
     //pru.ejercicio_26();
-    pru.ejercicio_27();
+    //pru.ejercicio_27();
     
         
     

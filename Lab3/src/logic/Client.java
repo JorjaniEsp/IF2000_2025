@@ -1,19 +1,23 @@
+package logic;
 
-package domain;
-
-public class Person {
+public class Client {
     private String name;
     private String lastName;
     private String id;
     private String phone;
     private int age;
+    private String direccion;    
 
-    public Person(String name, String lastName, String id, String phone, int age) {
+    public Client() {
+    }
+    
+    public Client(String name, String lastName, String id, String phone, int age, String direccion) {
         this.name = name;
         this.lastName = lastName;
         this.id = id;
         this.phone = phone;
         this.age = age;
+        this.direccion = direccion;
     }
 
     public String getName() {
@@ -56,20 +60,25 @@ public class Person {
         this.age = age;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
     @Override
     public String toString() {
-        return "--------------------" 
-                +"\n Person:" 
-                + "\n name: " + getName() 
-                + "\n lastName: " + getLastName()
-                + "\n id: " + getId()
-                + "\n phone: " + getPhone() 
-                + "\n age: " + getAge();
+        return "--------------------"
+        + "\n Client:"
+        + "\n name: " + name
+        + "\n lastName: " + lastName
+        + "\n id: " + id
+        + "\n phone: " + phone
+        + "\n age: " + age
+        + "\n direccion: " + direccion;
     }
-    
-    
-    
-    
     
     
 }
