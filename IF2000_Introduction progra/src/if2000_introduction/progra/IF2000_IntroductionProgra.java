@@ -13,20 +13,21 @@ public class IF2000_IntroductionProgra {
         
         Scanner sc = new Scanner(System.in);
         
-          Person client1 = new Person("Jorjanie", "Espinoza", "7-0321-0835", "62000129", 19);
-          SavingAccount account1 = new SavingAccount("2025-09-13", 12, 5, "1000456", 25000, client1);
+          //Person client1 = new Person("Jorjanie", "Espinoza", "7-0321-0835", "62000129", 19);
+          //SavingAccount account1 = new SavingAccount("2025-09-13", 12, 5, "1000456", 25000, client1);
           
-          account1.deposit(3000);
+          //account1.deposit(3000);
           
-          System.out.println(account1.toString());
+          //System.out.println(account1.toString());
           
-          System.out.println("\n\n\n-----------------------");
-          System.out.println("   Withdraw of money");
-          System.out.println("-----------------------\n\n");
+          //System.out.println("\n\n\n-----------------------");
+          //System.out.println("   Withdraw of money");
+          //System.out.println("-----------------------\n\n");
           
-          account1.withdraw(15000);
+          //account1.withdraw(15000);
           
-          System.out.println(account1);
+          //System.out.println(account1);
+        
         
        /* String name = "Liones";
         int age = 40;
@@ -84,7 +85,30 @@ public class IF2000_IntroductionProgra {
      Quiz_3 prct;
      prct = new Quiz_3();
      //prct.parte_3(5);
-   
+     
+     Ejercios28_41 pr = new Ejercios28_41();
+     
+     //pr.ejercicio_28();
+     //pr.ejercicio_29();
+     //pr.ejercicio_30();
+     //pr.ejercicio_31();
+     //pr.ejercicio_32();
+     //pr.ejercicio_33();
+     //pr.ejercicio_34();
+     //pr.ejercicio_35();
+     //pr.ejercicio_36();
+     //pr.ejercicio_37();
+     //pr.ejercicio_38();
+     //pr.ejercicio_39();
+     //pr.ejercicio_40();
+     //pr.ejercicio_41();
+     
+     PracticaExa p = new PracticaExa();
+     //p.ejercicio_42();
+     p.ejercicio_43();
+     //p.ejercicio_48();
+     //p.ejercicio_ramdom2();
+     
     
     }
 }
